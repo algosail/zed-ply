@@ -1,0 +1,16 @@
+[package]
+name = "ply-zed"
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.7"
+# Same pins as plylang-ls: newer idna/ICU need rustc 1.88.
+url = "=2.5.4"
+idna = "=1.0.3"
+idna_adapter = "=1.2.0"

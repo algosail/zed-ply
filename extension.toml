@@ -1,0 +1,16 @@
+id = "ply"
+name = "Ply"
+version = "0.0.1"
+schema_version = 1
+authors = ["Algosail"]
+description = "Ply language support"
+repository = "https://github.com/algosail/zed-ply"
+
+[language_servers.plylang]
+name = "Ply Language Server"
+languages = ["Ply"]
+
+# Zed clones this revision and compiles src/parser.c.
+[grammars.ply]
+repository = "https://github.com/algosail/tree-sitter-ply"
+rev = "eea99f6eecaac870a4094f1ff602f8e07df2a328"
